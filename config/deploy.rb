@@ -21,14 +21,14 @@ set :repo_url, "git@github.com:JamesYang76/passenger-apache-cap.git"
 
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml"
+append :linked_files, "config/database.yml","config/secrets.yml"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 #
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
-set :rvm_ruby_version, "2.5.3"
+set :rvm_ruby_version, "2.5.0"
 
 set :passenger_restart_command, 'passenger-config restart-app'
 
