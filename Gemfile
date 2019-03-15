@@ -55,6 +55,8 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-passenger'
 
+  gem 'capistrano-upload-config'
+
   # Remove the following if your app does not use Rails
   gem 'capistrano-rails'
 
