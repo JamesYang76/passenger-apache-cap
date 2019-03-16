@@ -7,7 +7,7 @@ server "ubuntu@ec2-13-211-167-226.ap-southeast-2.compute.amazonaws.com", user: "
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/tmp' }
+set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/ubuntu/passenger_temp' }
 
 # role-based syntax
 # ==================
