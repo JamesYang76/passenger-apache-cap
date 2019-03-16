@@ -47,6 +47,8 @@ set :passenger_restart_command, 'passenger-config restart-app'
 namespace :deploy do
 
   before 'check:linked_files', 'config:push'
+  before :starting,  :one
+
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
@@ -56,6 +58,7 @@ namespace :deploy do
     end
   end
 
+  desc "Make sure just Test."
   task :one do
     on roles(:web) do
       info "One"
