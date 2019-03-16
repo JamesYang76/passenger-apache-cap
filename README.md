@@ -38,9 +38,9 @@ $ sudo vim /etc/apache2/sites-available/passenger-apache-cap.conf
 $ sudo a2ensite /etc/apache2/sites-available/passenger-apache-cap.conf
 $ sudo a2enmod passenger
 
-$ sudo systemctl daemon-reload
+$ sudo systemctl reload apache2
 $ sudo systemctl restart apache2
-$ passenger-config restart-appa
+$ passenger-config restart-app
 ```
 
 ###two ways for fix error passenger-config restart-app 
