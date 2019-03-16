@@ -71,5 +71,4 @@ namespace :deploy do
       puts "Just initail"
     end
   end
-
-  end
+end
