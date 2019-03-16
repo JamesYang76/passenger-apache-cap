@@ -30,7 +30,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 
 set :rvm_ruby_version, "2.5.0"
 
-set :passenger_restart_command, 'passenger-config restart-app'
+#set :passenger_restart_command, 'passenger-config restart-app'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
