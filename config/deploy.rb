@@ -55,4 +55,10 @@ namespace :deploy do
       # end
     end
   end
+
+  task :one do
+    on roles(:web) do
+      info "One"
+    end
+  end
 end
