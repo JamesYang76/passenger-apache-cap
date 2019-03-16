@@ -61,7 +61,7 @@ namespace :deploy do
   desc "Make sure just Test."
   task :one do
     on roles(:all) do
-      puts "Just One"
+      execute :rake, 'cache:clear'
     end
   end
 end
