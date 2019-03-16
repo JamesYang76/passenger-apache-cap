@@ -48,6 +48,7 @@ namespace :deploy do
 
   before 'check:linked_files', 'config:push'
   before :starting,     :one
+  before :starting,     :check_write_permissions
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
@@ -61,8 +62,7 @@ namespace :deploy do
   desc "Make sure just Test."
   task :one do
     on roles(:all) do
-      puts "Just One"
-      info "ONe info"
+      info "Just One"
     end
   end
 
