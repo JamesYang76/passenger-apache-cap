@@ -62,6 +62,7 @@ namespace :deploy do
   task :one do
     on roles(:all) do
       puts "Just One"
+      info "ONe info"
     end
   end
 
